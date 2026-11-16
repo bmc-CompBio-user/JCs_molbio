@@ -23,7 +23,7 @@ Are abundant RNAs associated with abundant proteins?
 ::: {.column width="33%"}
 <p class="jc-point-head">Across cells</p>
 One point = one cell\
-For a fixed gene, do RNA and protein fluctuate together?
+For a fixed gene, do RNA and protein rise and fall together?
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Across conditions</p>
@@ -32,14 +32,14 @@ Do RNA changes predict protein changes or later responses?
 :::
 ::::
 
-<p class="jc-highlight">Always ask what each point represents.</p>
+<p class="jc-highlight">Always ask what each point on the plot stands for.</p>
 
-<p class="jc-source">Conceptual distinctions used throughout the journal club.</p>
+<p class="jc-source">A distinction used throughout this journal club.</p>
 
 ::: {.notes}
-Across-gene correlation captures broad abundance rankings. Within-gene across-cell correlation measures cell-to-cell covariation. Across-condition comparisons concern responses. These are different estimands. High across-gene correlation and weak within-gene correlation can coexist.
+Across-gene correlation captures broad abundance rankings. Within-gene across-cell correlation measures cell-to-cell covariation. Across-condition comparisons concern responses. These are different questions, not three measurements of the same thing. High across-gene correlation and weak within-gene correlation can coexist.
 
-Source: Conceptual distinctions used throughout the journal club.
+Source: A distinction used throughout this journal club.
 :::
 
 ## 1999: the abundance range changes the correlation
@@ -55,11 +55,11 @@ Source: Conceptual distinctions used throughout the journal club.
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">106 genes: r = 0.935<br>Low-mRNA subset: r = 0.356</p>
+<p class="jc-highlight">106 genes: r = 0.935<br>Low-RNA subset: r = 0.356</p>
 :::
 ::: {.column width="50%"}
-A few highly abundant genes dominate.\
-Futcher et al. also questioned measurement accuracy.
+A handful of highly abundant genes dominate the first number.\
+A companion paper also questioned the accuracy of the low-abundance measurements.
 :::
 ::::
 
@@ -71,7 +71,7 @@ Original figures, cropped to retain axes. Protein abundance used metabolic label
 Source: Gygi et al. Mol Cell Biol (1999). doi:10.1128/MCB.19.3.1720 • Figures 5 and 6
 :::
 
-## 2002: reporter experiments separate sources of noise
+## 2002: two glowing tags separate two kinds of noise
 
 :::: {.columns}
 ::: {.column width="38%"}
@@ -81,13 +81,13 @@ Source: Gygi et al. Mol Cell Biol (1999). doi:10.1128/MCB.19.3.1720 • Figures 
 ![](images/elowitz2.png)
 :::
 ::: {.column width="30%"}
-<p class="jc-point-head">Shared fluctuations</p>
-Cellular conditions affect both reporters.
+<p class="jc-point-head">Shared ups and downs</p>
+Whatever is happening in the whole cell affects both tags together.
 
-<p class="jc-point-head">Independent fluctuations</p>
-Expression events can differ within the same cell.
+<p class="jc-point-head">Independent ups and downs</p>
+The two copies of the same gene can still behave differently inside one cell.
 
-<p class="jc-highlight">Biological noise and measurement error need separate treatment.</p>
+<p class="jc-highlight">Biological noise and measurement error need to be told apart.</p>
 :::
 ::::
 
@@ -99,7 +99,7 @@ Two fluorescent reporters under equivalent control distinguish shared cellular i
 Source: Elowitz et al. Science (2002). doi:10.1126/science.1070919 • Figures 1 and 2
 :::
 
-## 2006: protein lifetime changes RNA–protein coupling
+## 2006: how long a protein survives changes the link
 
 :::: {.columns}
 ::: {.column width="32%"}
@@ -109,12 +109,12 @@ Source: Elowitz et al. Science (2002). doi:10.1126/science.1070919 • Figures 1
 ![](images/raj7d.png)
 :::
 ::: {.column width="40%"}
-<p class="jc-point-head">Experiment, left</p>
-Rapidly degraded reporter: stronger coupling.\
-Stable reporter: weaker coupling.
+<p class="jc-point-head">What was measured</p>
+A protein that gets broken down quickly: stronger link to RNA.\
+A stable protein: weaker link to RNA.
 
-<p class="jc-point-head">Model, center</p>
-Longer protein lifetime smooths transient RNA fluctuations.
+<p class="jc-point-head">A simple model</p>
+A longer-lived protein smooths out short bursts of RNA.
 :::
 ::::
 
@@ -126,19 +126,19 @@ RNA FISH and fluorescent reporters in mammalian cells. Figure 7A/B compares repo
 Source: Raj et al. PLoS Biol (2006). doi:10.1371/journal.pbio.0040309 • Figure 7A,B,D
 :::
 
-## 2010: same-cell uncoupling without mass spectrometry
+## 2010: the same weak link, seen without a mass spectrometer
 
 :::: {.columns}
 ::: {.column width="55%"}
 ![](images/taniguchi4.png)
 :::
 ::: {.column width="45%"}
-<p class="jc-point-head">One gene across cells</p>
+<p class="jc-point-head">One gene, many cells</p>
 tufA: r ≈ 0.01\
-5,447 cells
+5,447 bacterial cells
 
-<p class="jc-point-head">Direct paired imaging</p>
-Protein fluorescence and RNA FISH show weak instantaneous coupling.
+<p class="jc-point-head">Measured side by side</p>
+Glowing protein and RNA spots, counted in the same cells at the same moment, showed almost no relationship.
 :::
 ::::
 
@@ -150,22 +150,22 @@ YFP fusions and single-molecule RNA FISH in E. coli. TufA-YFP r=0.01 ±0.03 SEM,
 Source: Taniguchi et al. Science (2010). doi:10.1126/science.1188308 • Figure 4
 :::
 
-## 2011–2014: calibration changes the inferred biology
+## 2011–2014: the same kind of data, two different conclusions
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-point-head">2011: integrated measurements</p>
-Abundance and turnover estimates support a quantitative model of gene-expression control.
+<p class="jc-point-head">2011: a first global estimate</p>
+Combining protein amounts with how fast RNA and protein are made and broken down gave an early picture of how much RNA drives protein levels.
 :::
 ::: {.column width="50%"}
-<p class="jc-point-head">2013–2014: revised calibration</p>
-A correction and reanalysis shift the estimated contribution of mRNA abundance upward.
+<p class="jc-point-head">2013–2014: the numbers move</p>
+A correction, plus a new analysis using more carefully measured proteins, pushed the estimated role of RNA upward.
 :::
 ::::
 
-<p class="jc-highlight">The biological conclusion depends on the measurement model.</p>
+<p class="jc-highlight">The same kind of data can support different conclusions, depending on how the measurement is calibrated.</p>
 
-Across-gene protein variance explained by mRNA is a different question from cell-to-cell coupling.
+This is about average differences between genes — not about whether RNA and protein move together inside one cell.
 
 <p class="jc-source">Schwanhäusser et al. Nature (2011), doi:10.1038/nature10098. Li et al. PeerJ (2014), doi:10.7717/peerj.270</p>
 
@@ -175,16 +175,16 @@ Schwanhäusser combined mammalian RNA/protein abundance and turnover to estimate
 Source: Schwanhäusser et al. Nature (2011), doi:10.1038/nature10098. Li et al. PeerJ (2014), doi:10.7717/peerj.270
 :::
 
-## 2015: noise and missingness bias observed correlations
+## 2015: noise and missing values can hide a true correlation
 
 ![](images/csardi3.png)
 
 :::: {.columns}
 ::: {.column width="45%"}
-<p class="jc-highlight">Measurement reliability affects r.</p>
+<p class="jc-highlight">How precise the measurement is changes the correlation you can see.</p>
 :::
 ::: {.column width="55%"}
-Correction also requires assumptions about missing values and shared errors.
+Correcting for this means making assumptions about which values go missing, and about whether RNA and protein share some of the same errors.
 :::
 ::::
 
@@ -200,9 +200,9 @@ Source: Csárdi et al. PLoS Genet (2015). doi:10.1371/journal.pgen.1005206 • F
 
 ![](images/workflow.png)
 
-<p class="jc-highlight">Paired cell identity is the central technical strength.</p>
+<p class="jc-highlight">Its biggest strength: the RNA and the protein come from the very same single cell.</p>
 
-Models: asynchronous HeLa cells and mouse ESC pluripotency transitions.
+Tested in growing cancer cells, and in mouse stem cells moving through early development.
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 1A</p>
 
@@ -212,17 +212,16 @@ Current supplied preprint, posted 26 August 2026, not peer reviewed. Full title:
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 1A
 :::
 
-## Depth establishes coverage, not quantitative accuracy
+## More detections is not the same as more accuracy
 
 ![](images/depth.png)
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Benchmark: 4,080 protein groups and 16,635 detected genes per cell</p>
+<p class="jc-highlight">Typically: about 4,080 proteins and 16,635 genes found per cell.</p>
 :::
 ::: {.column width="50%"}
-What is still needed?\
-Known-input recovery and error estimates at single-cell input.
+Still missing: testing the method on a sample where the right answer is already known, to see how much error it adds.
 :::
 ::::
 
@@ -234,16 +233,16 @@ Figure 1B median multimodal depth 3,471 protein groups per cell vs 5,397 and 5,0
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 1B–E
 :::
 
-## The comparison axis explains apparently conflicting r values
+## Why two very different correlation numbers are both right
 
 ![](images/correlations.png)
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Across genes: broad abundance ranking</p>
+<p class="jc-highlight">Comparing genes to each other: a clear relationship (r ≈ 0.55)</p>
 :::
 ::: {.column width="50%"}
-<p class="jc-highlight">Across cells: median per-gene r = 0.038</p>
+<p class="jc-highlight">Comparing one gene across cells: almost no relationship (r = 0.038)</p>
 :::
 ::::
 
@@ -255,17 +254,16 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure S3B–D
 :::
 
-## State markers retain stronger RNA–protein coupling
+## Well-known marker genes behave better than genes overall
 
 ![](images/markers.png)
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Curated markers: median r = 0.32<br>All matched pairs: median r = 0.044</p>
+<p class="jc-highlight">Well-known marker genes: r = 0.32<br>All genes together: r = 0.044</p>
 :::
 ::: {.column width="50%"}
-RNA-only changes are frequent in pairwise state comparisons.\
-Detection and power differ by modality.
+Many changes between cell states show up only in RNA, not protein — partly because the two methods don't catch changes equally well.
 :::
 ::::
 
@@ -277,17 +275,16 @@ Mouse ESCs progress through naive, formative 6 h, formative 48 h and primed cond
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 3H,I
 :::
 
-## Only one-third of pairs change synchronously along pseudotime
+## Only about a third of genes change RNA and protein at the same time
 
 ![](images/trajectories.png)
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Strong evidence of complementary patterns</p>
+<p class="jc-highlight">RNA and protein often carry different, complementary information.</p>
 :::
 ::: {.column width="50%"}
-The timing is inferred from different cells.\
-A pseudotime bin is not a measured delay.
+This "timing" comes from comparing different cells to each other, ordered by how far along they are — it is not a stopwatch measurement inside one cell.
 :::
 ::::
 
@@ -299,20 +296,20 @@ A pseudotime bin is not a measured delay.
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 4A–C
 :::
 
-## The key variance claim: RNA CV² is 4.9-fold higher
+## The main claim: RNA levels swing about five times more than protein
 
 :::: {.columns}
 ::: {.column width="40%"}
 ![](images/cv.png)
 :::
 ::: {.column width="60%"}
-<p class="jc-point-head">Reported observation</p>
-Protein has lower measured relative variability within states.
+<p class="jc-point-head">What was found</p>
+Protein levels vary less, relative to their own average, than RNA levels do.
 
-<p class="jc-point-head">Biological interpretation</p>
-Longer protein lifetimes buffer RNA fluctuations.
+<p class="jc-point-head">One explanation</p>
+Proteins stick around longer than RNA, so they smooth out short-lived ups and downs.
 
-<p class="jc-highlight">How much of the gap survives assay calibration?</p>
+<p class="jc-highlight">How much of this gap is real biology, and how much comes from how each molecule is measured?</p>
 :::
 ::::
 
@@ -324,17 +321,17 @@ Longer protein lifetimes buffer RNA fluctuations.
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 5A
 :::
 
-## Fewer cells recover the proteome's own PCA structure
+## Protein's overall pattern needs far fewer cells to see clearly
 
 ![](images/sampling.png)
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">80% recovery: 110 versus 345 cells</p>
+<p class="jc-highlight">Clear overall pattern with far fewer cells: about 110 for protein versus 345 for RNA.</p>
 :::
 ::: {.column width="50%"}
-Different reference dimensionalities\
-Model uncertainty needs external validation
+Protein's overall pattern is simpler, so a small sample already shows most of it.\
+These uncertainty estimates still need to be checked against independent evidence.
 :::
 ::::
 
@@ -346,102 +343,135 @@ Figure 5B uses 495 matched cells and 1,742 pairs detected in >=80% of cells. It 
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 5B,C
 :::
 
-## Precision, accuracy and biological variance
+## What can make two linked things look unlinked?
 
-<p class="jc-highlight">Observed signal = response to true abundance + error</p>
+<p class="jc-highlight">What you measure = the true amount, plus whatever the measurement adds or misses.</p>
 
 :::: {.columns}
 ::: {.column width="33%"}
-<p class="jc-point-head">Precision</p>
-Repeatability at fixed input.\
-Random error usually adds variance.
+<p class="jc-point-head">Repeatability</p>
+How similar the answer is if you measure the same sample again.\
+Random noise alone can make things look more scattered than they really are.
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Accuracy</p>
-Recovery of known abundance differences.\
-Bias can persist across precise repeats.
+Whether the measurement gets the real number right.\
+A measurement can be very repeatable and still be wrong by the same amount every time.
 :::
 ::: {.column width="33%"}
-<p class="jc-point-head">Biological variance</p>
-Cell-to-cell variation after accounting for assay response and error.
+<p class="jc-point-head">Real biological difference</p>
+The true differences between cells, once you account for how the measurement responds and where it slips.
 :::
 ::::
 
-<p class="jc-highlight">Low measured variance alone cannot establish accurate measurement.</p>
+<p class="jc-highlight">A low correlation, on its own, does not prove the measurement is accurate — or that the biology is simple.</p>
 
-<p class="jc-source">Statistical framework for discussion. Classical independent additive-error assumptions are stated below.</p>
+<p class="jc-source">A general way of thinking about measurement, used on the next two slides.</p>
 
 ::: {.notes}
-Let observed Y=a+bX+epsilon. With error independent of X, Var(Y)=b² Var(X)+Var(epsilon). Compression (b<1) can reduce variance, additive error increases it. CV is invariant to multiplicative scaling alone, but not offsets, nonlinear transforms or censoring. Classical attenuation: r_obs=r_true sqrt(R_RNA R_protein), where R is reliability, under independent errors and a linear additive model. Correlated errors violate this simple expression. These are conceptual models, not fitted results from this preprint.
+Let observed Y=a+bX+epsilon. With error independent of X, Var(Y)=b² Var(X)+Var(epsilon). Compression (b<1) can reduce variance, additive error increases it. CV is invariant to multiplicative scaling alone, but not offsets, nonlinear transforms or censoring. Classical attenuation: r_obs=r_true sqrt(R_RNA R_protein), where R is reliability, under independent errors and a linear additive model. Correlated errors violate this simple expression. These are conceptual models, not fitted results from this preprint. The next two slides show this relationship with a simulation rather than just stating the formula.
 
 Source: Statistical framework for discussion. Classical independent additive-error assumptions are stated below.
 :::
 
-## The critique must follow the actual analysis
+## Seeing it happen: perfect coupling, then add noise
+
+![](images/sim_perfect_coupling.png)
+
+In this exercise, protein is built to be an exact mirror of RNA — in every single cell, no exceptions. Only the amount of natural cell-to-cell difference changes from panel to panel; the measurement noise stays the same.
+
+<p class="jc-highlight">Cells differ a lot → easy to see (r ≈ 0.96). Cells differ a little → already weak (r ≈ 0.50). Cells barely differ → almost gone (r ≈ 0.04).</p>
+
+The link between RNA and protein never changed. Only how much the cells truly differed from one another, compared to the noise in each measurement, changed.
+
+<p class="jc-source">An illustrative exercise for this journal club, not a re-analysis of Thielert et al. The same fixed amount of measurement noise is added in every panel.</p>
+
+::: {.notes}
+Model: for each cell, draw a latent centered log2 abundance T ~ Normal(0, sigma_bio^2). True RNA = true protein = T, so the true correlation is 1 by construction. Observed X = T + e_R, Y = T + e_P, with e_R and e_P independent of each other and of T, SD 0.20 log2 units in both. Reliability R = sigma_bio^2 / (sigma_bio^2 + sigma_error^2); under this model, rho_observed = rho_true * sqrt(R_RNA * R_protein). With sigma_bio = 1.00, 0.20 and 0.04 (error fixed at 0.20), population correlations are approximately 0.962, 0.500 and 0.038 — the 318-cell samples shown land close to these values. This is a counterexample to reading a low observed correlation as proof of biological independence; it does not establish the technical reliability of the Thielert preprint or that its conclusions are wrong. The simulation deliberately excludes RNA count sampling, protein detection censoring, shared errors, normalization artifacts, and gene-specific assay responses. Reproduced by simulate.py in this repository (NumPy/Matplotlib, fixed seed 20261116); see correlation_simulation/README.md in the project history for the full derivation and references (Zimmerman & Williams; Csárdi et al. 2015).
+
+Source: Illustrative exercise for this journal club, not a re-analysis of Thielert et al.
+:::
+
+## More cells sharpen the estimate — they don't erase the noise
+
+![](images/sim_noise_ceiling.png)
+
+Repeating the same noisy measurement on many more cells gives a far more confident estimate of the correlation.
+
+<p class="jc-highlight">But the estimate still settles on the same low number — set by the noise, not by how many cells were measured.</p>
+
+A bigger study answers "how sure are we of this number?" It cannot answer "how much is hidden by noise?"
+
+<p class="jc-source">An illustrative exercise for this journal club, continued from the previous slide.</p>
+
+::: {.notes}
+For each of 50 biological standard deviations (log-spaced, 0.01 to 1), 2,000 independent simulated experiments of 318 cells each were run with the same error model as the previous slide. The solid line is the population correlation predicted by reliability (rho_true * sqrt(R_RNA*R_protein) with rho_true=1); dots are Monte Carlo means; shading is the central 95% of sample correlations. Analytic and simulated means agree to within 0.01. The takeaway for the room: do not mechanically divide a near-zero sample correlation by a very small estimated reliability to "correct" it — such corrections are unstable and do not solve censoring or correlated errors. The defensible version is to estimate abundance-dependent technical error and attainable correlation at single-cell input, propagate that uncertainty, and focus conclusions on features with high reliability in both modalities.
+
+Source: Illustrative exercise for this journal club, continued from the previous slide.
+:::
+
+## A tempting criticism that turns out not to apply
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-point-head">What the paper states</p>
-CV² uses detected, unimputed values.\
-At least 15 cells per state are required.
+<p class="jc-point-head">What the paper actually did</p>
+This comparison used real, measured protein values — not values filled in by guesswork — and only counted cell states with at least 15 cells.
 :::
 ::: {.column width="50%"}
-<p class="jc-point-head">What needs verification</p>
-Exact scale for CV².\
-RNA read counts versus UMI counts.\
-Sensitivity to detection thresholds.
+<p class="jc-point-head">What's still worth checking</p>
+The exact way the numbers were calculated, whether using raw RNA read counts changes anything, and how sensitive the result is to the cutoff for calling a gene "detected."
 :::
 ::::
 
-<p class="jc-highlight">Imputation is relevant to embeddings and latent structure, but it is not the direct explanation for Figure 5A.</p>
+<p class="jc-highlight">Filling in missing values is a real concern elsewhere in this paper — but it is not the explanation for this particular result.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Methods pp. 26–28 and Figure 5</p>
 
 ::: {.notes}
-Important correction to a generic imputation critique: CV and CV² use unimputed protein values. Missingness and filtering still matter. Generic preprocessing describes log2 protein intensities and log1p RNA counts normalized to 10,000 per cell. The variance paragraph does not unambiguously name the exact raw/transformed layer. Source code inspection would be required to establish this; do not claim log-CV misuse as demonstrated. RNA counts are read-aligned unless stated otherwise, so UMI-based sensitivity analysis is relevant. Embeddings use imputation/batch correction, with different workflows for the two modalities.
+Important correction to a generic imputation critique: CV and CV² use unimputed protein values. Missingness and filtering still matter elsewhere. Generic preprocessing describes log2 protein intensities and log1p RNA counts normalized to 10,000 per cell. The variance paragraph does not unambiguously name the exact raw/transformed layer. Source code inspection would be required to establish this; do not claim log-CV misuse as demonstrated. RNA counts are read-aligned unless stated otherwise, so UMI-based sensitivity analysis is relevant. Embeddings use imputation and batch correction, with different workflows for the two modalities — that is a separate, real concern from the variance claim on the previous slides.
 
 Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Methods pp. 26–28 and Figure 5
 :::
 
-## Experiments that separate stability from assay behavior
+## Experiments that could tell biology and measurement apart
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-point-head">Known input</p>
-Cell-equivalent lysate replicates and early standards estimate technical error.
+<p class="jc-point-head">Known amount</p>
+Measuring the very same prepared sample over and over shows how much noise the process itself adds.
 :::
 ::: {.column width="50%"}
 <p class="jc-point-head">Known differences</p>
-Controlled mixtures and dilution series test linearity and fold-change recovery.
+Mixing known amounts together, or diluting a sample step by step, tests whether the method reports real changes accurately.
 :::
 ::::
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-point-head">Robust analysis</p>
-Matched features, detection strata, raw-scale checks and UMI sensitivity.
+<p class="jc-point-head">Careful analysis</p>
+Looking only at genes measured well by both methods, using the raw numbers, and checking different counting rules.
 :::
 ::: {.column width="50%"}
-<p class="jc-point-head">Independent endpoint</p>
-Orthogonal assays and held-out state labels test accuracy beyond PCA recovery.
+<p class="jc-point-head">An outside check</p>
+Comparing against a different method, or against cell states defined without using either RNA or protein, tests real accuracy — not just whether the two methods agree with each other.
 :::
 ::::
 
-<p class="jc-source">Proposed validation experiments and sensitivity analyses.</p>
+<p class="jc-source">Proposed checks and sensitivity analyses, not experiments the authors are known to have run.</p>
 
 ::: {.notes}
 These are suggested controls, not claims that the authors performed them. Homogeneous lysate aliquots quantify preparation and acquisition variability at a fixed input but omit sorting and lysis variation. Standards introduced early can probe more of the workflow. Controlled mixtures assess fold-change recovery and interference. Orthogonal protein measurements have their own error sources. The cleanest modality comparison uses a shared externally validated biological endpoint.
 
-Source: Proposed validation experiments and sensitivity analyses.
+Source: Proposed checks and sensitivity analyses, not experiments the authors are known to have run.
 :::
 
 ## Discussion: what does the evidence establish?
 
 <p class="jc-highlight">Same-cell profiling reveals complementary RNA and protein patterns.</p>
 
-Lower measured protein CV² is consistent with biological buffering.
+Protein's lower measured variability fits with the idea that protein levels are more stable than RNA levels.
 
-How much of the difference comes from assay response, detection and analysis?
+How much of that difference is real biology, and how much comes from how each method measures and processes its signal?
 
 <p class="jc-highlight">Which single control would most change your confidence?</p>
 
@@ -478,7 +508,7 @@ Figure assets come from original PDFs. Gygi: https://proteome.gs.washington.edu/
 Source: Original paper figures retain panel labels. Sources and interpretation notes accompany each slide.
 :::
 
-## References: calibration and the current preprint
+## References: calibration, simulation and the current preprint
 
 **Schwanhäusser et al. (2011)** Global quantification of mammalian gene expression control. Nature.\
 10.1038/nature10098 (correction in 2013)
@@ -492,10 +522,12 @@ Source: Original paper figures retain panel labels. Sources and interpretation n
 **Thielert et al. (2026)** In the same cell, the proteome defines cellular state and the transcriptome marks transitions. bioRxiv v1\
 10.64898/2026.08.25.746940
 
+**This journal club** Perfect coupling, variable noise: a simulation illustrating classical measurement-error attenuation (`simulate.py`, fixed seed 20261116)
+
 <p class="jc-source">The supplied preprint is version 1, posted 26 August 2026, and has not been peer reviewed.</p>
 
 ::: {.notes}
-Current source: Thielert et al., bioRxiv v1, posted 26 August 2026 (2026.08.25.746940v1.full.pdf). Citation URLs use DOI resolvers. Original panels were cropped from the supplied source without changing data. Preprint figure attribution: Thielert et al., CC-BY-NC-ND 4.0. Raj and Csardi figures are from PLOS open-access articles. Other paper figures are reproduced with attribution for journal-club discussion.
+Current source: Thielert et al., bioRxiv v1, posted 26 August 2026 (2026.08.25.746940v1.full.pdf). Citation URLs use DOI resolvers. Original panels were cropped from the supplied source without changing data. Preprint figure attribution: Thielert et al., CC-BY-NC-ND 4.0. Raj and Csardi figures are from PLOS open-access articles. Other paper figures are reproduced with attribution for journal-club discussion. The simulation figures were produced for this journal club and are not from any of the cited papers.
 
 Source: The supplied preprint is version 1, posted 26 August 2026, and has not been peer reviewed.
 :::
