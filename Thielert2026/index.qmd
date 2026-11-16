@@ -10,6 +10,19 @@ format:
     transition: fade
     embed-resources: true
     preview-links: auto
+    include-after-body:
+      text: |
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var ts = document.getElementById('title-slide');
+          if (ts) {
+            var p = document.createElement('p');
+            p.className = 'jc-source';
+            p.innerHTML = 'Slides, speaker notes and the simulation source: <a href="https://github.com/bmc-CompBio-user/JCs_molbio/tree/main/Thielert2026">github.com/bmc-CompBio-user/JCs_molbio</a>';
+            ts.appendChild(p);
+          }
+        });
+        </script>
 ---
 
 ## Three different RNA–protein correlations
@@ -55,13 +68,14 @@ Source: A distinction used throughout this journal club.
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">106 genes: r = 0.935<br>Low-RNA subset: r = 0.356</p>
+<p class="jc-stat">106 genes: r = 0.935<br>Low-RNA subset: r = 0.356</p>
 :::
 ::: {.column width="50%"}
-A handful of highly abundant genes dominate the first number.\
 A companion paper also questioned the accuracy of the low-abundance measurements.
 :::
 ::::
+
+<p class="jc-highlight">A handful of highly abundant genes made the overall relationship look stronger than it really was for most genes.</p>
 
 <p class="jc-source">Gygi et al. Mol Cell Biol (1999). doi:10.1128/MCB.19.3.1720 • Figures 5 and 6</p>
 
@@ -86,10 +100,10 @@ Whatever is happening in the whole cell affects both tags together.
 
 <p class="jc-point-head">Independent ups and downs</p>
 The two copies of the same gene can still behave differently inside one cell.
-
-<p class="jc-highlight">Biological noise and measurement error need to be told apart.</p>
 :::
 ::::
+
+<p class="jc-highlight">Biological noise and measurement error need to be told apart.</p>
 
 <p class="jc-source">Elowitz et al. Science (2002). doi:10.1126/science.1070919 • Figures 1 and 2</p>
 
@@ -118,6 +132,8 @@ A longer-lived protein smooths out short bursts of RNA.
 :::
 ::::
 
+<p class="jc-highlight">How long a protein survives changes how tightly it tracks its RNA.</p>
+
 <p class="jc-source">Raj et al. PLoS Biol (2006). doi:10.1371/journal.pbio.0040309 • Figure 7A,B,D</p>
 
 ::: {.notes}
@@ -134,13 +150,14 @@ Source: Raj et al. PLoS Biol (2006). doi:10.1371/journal.pbio.0040309 • Figure
 :::
 ::: {.column width="45%"}
 <p class="jc-point-head">One gene, many cells</p>
-tufA: r ≈ 0.01\
-5,447 bacterial cells
+<p class="jc-stat">tufA: r ≈ 0.01 (5,447 cells)</p>
 
 <p class="jc-point-head">Measured side by side</p>
-Glowing protein and RNA spots, counted in the same cells at the same moment, showed almost no relationship.
+Glowing protein and RNA spots, counted in the same cells at the same moment.
 :::
 ::::
+
+<p class="jc-highlight">Even measured directly, side by side, RNA and protein barely moved together for this gene.</p>
 
 <p class="jc-source">Taniguchi et al. Science (2010). doi:10.1126/science.1188308 • Figure 4</p>
 
@@ -181,12 +198,14 @@ Source: Schwanhäusser et al. Nature (2011), doi:10.1038/nature10098. Li et al. 
 
 :::: {.columns}
 ::: {.column width="45%"}
-<p class="jc-highlight">How precise the measurement is changes the correlation you can see.</p>
+How precise the measurement is changes the correlation you can see.
 :::
 ::: {.column width="55%"}
 Correcting for this means making assumptions about which values go missing, and about whether RNA and protein share some of the same errors.
 :::
 ::::
+
+<p class="jc-highlight">A true, strong relationship can look weak if the measurement is imprecise.</p>
 
 <p class="jc-source">Csárdi et al. PLoS Genet (2015). doi:10.1371/journal.pgen.1005206 • Figure 3 (simulations)</p>
 
@@ -200,9 +219,9 @@ Source: Csárdi et al. PLoS Genet (2015). doi:10.1371/journal.pgen.1005206 • F
 
 ![](images/workflow.png)
 
-<p class="jc-highlight">Its biggest strength: the RNA and the protein come from the very same single cell.</p>
-
 Tested in growing cancer cells, and in mouse stem cells moving through early development.
+
+<p class="jc-highlight">Its biggest strength: the RNA and the protein come from the very same single cell.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 1A</p>
 
@@ -218,12 +237,14 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Typically: about 4,080 proteins and 16,635 genes found per cell.</p>
+<p class="jc-stat">About 4,080 proteins and 16,635 genes found per cell.</p>
 :::
 ::: {.column width="50%"}
 Still missing: testing the method on a sample where the right answer is already known, to see how much error it adds.
 :::
 ::::
+
+<p class="jc-highlight">Finding more things is not the same as measuring them more accurately.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 1B–E</p>
 
@@ -239,12 +260,16 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Comparing genes to each other: a clear relationship (r ≈ 0.55)</p>
+<p class="jc-point-head">Comparing genes to each other</p>
+<p class="jc-stat">A clear relationship (r ≈ 0.55)</p>
 :::
 ::: {.column width="50%"}
-<p class="jc-highlight">Comparing one gene across cells: almost no relationship (r = 0.038)</p>
+<p class="jc-point-head">Comparing one gene across cells</p>
+<p class="jc-stat">Almost no relationship (r = 0.038)</p>
 :::
 ::::
+
+<p class="jc-highlight">Both numbers are correct — they just answer different questions.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure S3B–D</p>
 
@@ -260,12 +285,14 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Well-known marker genes: r = 0.32<br>All genes together: r = 0.044</p>
+<p class="jc-stat">Well-known markers: r = 0.32<br>All genes together: r = 0.044</p>
 :::
 ::: {.column width="50%"}
-Many changes between cell states show up only in RNA, not protein — partly because the two methods don't catch changes equally well.
+Detection and statistical power differ between the two methods.
 :::
 ::::
+
+<p class="jc-highlight">Many changes between cell states show up only in RNA, not protein — not necessarily because only one of them truly changed.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 3H,I</p>
 
@@ -281,12 +308,14 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">RNA and protein often carry different, complementary information.</p>
+RNA and protein often carry different, complementary information.
 :::
 ::: {.column width="50%"}
-This "timing" comes from comparing different cells to each other, ordered by how far along they are — it is not a stopwatch measurement inside one cell.
+This "timing" comes from comparing different cells to each other, ordered by how far along they are.
 :::
 ::::
+
+<p class="jc-highlight">It is not a stopwatch measurement inside one cell — it is an ordering built by comparing many different cells.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 4A–C</p>
 
@@ -308,10 +337,10 @@ Protein levels vary less, relative to their own average, than RNA levels do.
 
 <p class="jc-point-head">One explanation</p>
 Proteins stick around longer than RNA, so they smooth out short-lived ups and downs.
-
-<p class="jc-highlight">How much of this gap is real biology, and how much comes from how each molecule is measured?</p>
 :::
 ::::
+
+<p class="jc-highlight">How much of this gap is real biology, and how much comes from how each molecule is measured?</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 5A</p>
 
@@ -327,13 +356,14 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 :::: {.columns}
 ::: {.column width="50%"}
-<p class="jc-highlight">Clear overall pattern with far fewer cells: about 110 for protein versus 345 for RNA.</p>
+<p class="jc-stat">About 110 cells for protein versus 345 for RNA.</p>
 :::
 ::: {.column width="50%"}
-Protein's overall pattern is simpler, so a small sample already shows most of it.\
 These uncertainty estimates still need to be checked against independent evidence.
 :::
 ::::
+
+<p class="jc-highlight">Protein's overall pattern is simpler, so a small sample already shows most of it.</p>
 
 <p class="jc-source">Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Figure 5B,C</p>
 
@@ -345,18 +375,16 @@ Source: Thielert et al. bioRxiv v1 (2026). doi:10.64898/2026.08.25.746940 • Fi
 
 ## What can make two linked things look unlinked?
 
-<p class="jc-highlight">What you measure = the true amount, plus whatever the measurement adds or misses.</p>
+<p class="jc-frame">What you measure = the true amount, plus whatever the measurement adds or misses.</p>
 
 :::: {.columns}
 ::: {.column width="33%"}
 <p class="jc-point-head">Repeatability</p>
-How similar the answer is if you measure the same sample again.\
-Random noise alone can make things look more scattered than they really are.
+How similar the answer is if you measure the same sample again. Random noise alone can make things look more scattered than they really are.
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Accuracy</p>
-Whether the measurement gets the real number right.\
-A measurement can be very repeatable and still be wrong by the same amount every time.
+Whether the measurement gets the real number right. It can be very repeatable and still be wrong by the same amount every time.
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Real biological difference</p>
@@ -378,11 +406,11 @@ Source: Statistical framework for discussion. Classical independent additive-err
 
 ![](images/sim_perfect_coupling.png)
 
-In this exercise, protein is built to be an exact mirror of RNA — in every single cell, no exceptions. Only the amount of natural cell-to-cell difference changes from panel to panel; the measurement noise stays the same.
+<p class="jc-frame">Protein is built to be an exact mirror of RNA in every single cell, no exceptions. Only the amount of natural cell-to-cell difference changes from panel to panel; the measurement noise stays the same.</p>
 
-<p class="jc-highlight">Cells differ a lot → easy to see (r ≈ 0.96). Cells differ a little → already weak (r ≈ 0.50). Cells barely differ → almost gone (r ≈ 0.04).</p>
+<p class="jc-stat">Cells differ a lot: r ≈ 0.96 — cells differ a little: r ≈ 0.50 — cells barely differ: r ≈ 0.04</p>
 
-The link between RNA and protein never changed. Only how much the cells truly differed from one another, compared to the noise in each measurement, changed.
+<p class="jc-highlight">The link between RNA and protein never changed. Only how much the cells truly differed from one another, compared to the noise, changed.</p>
 
 <p class="jc-source">An illustrative exercise for this journal club, not a re-analysis of Thielert et al. The same fixed amount of measurement noise is added in every panel.</p>
 
@@ -398,9 +426,9 @@ Source: Illustrative exercise for this journal club, not a re-analysis of Thiele
 
 Repeating the same noisy measurement on many more cells gives a far more confident estimate of the correlation.
 
-<p class="jc-highlight">But the estimate still settles on the same low number — set by the noise, not by how many cells were measured.</p>
-
 A bigger study answers "how sure are we of this number?" It cannot answer "how much is hidden by noise?"
+
+<p class="jc-highlight">The estimate still settles on the same low number — set by the noise, not by how many cells were measured.</p>
 
 <p class="jc-source">An illustrative exercise for this journal club, continued from the previous slide.</p>
 
@@ -419,7 +447,7 @@ This comparison used real, measured protein values — not values filled in by g
 :::
 ::: {.column width="50%"}
 <p class="jc-point-head">What's still worth checking</p>
-The exact way the numbers were calculated, whether using raw RNA read counts changes anything, and how sensitive the result is to the cutoff for calling a gene "detected."
+The exact way the numbers were calculated, whether raw RNA read counts change anything, and how sensitive the result is to the detection cutoff.
 :::
 ::::
 
@@ -442,20 +470,22 @@ Measuring the very same prepared sample over and over shows how much noise the p
 :::
 ::: {.column width="50%"}
 <p class="jc-point-head">Known differences</p>
-Mixing known amounts together, or diluting a sample step by step, tests whether the method reports real changes accurately.
+Mixing known amounts together, or diluting step by step, tests whether the method reports real changes accurately.
 :::
 ::::
 
 :::: {.columns}
 ::: {.column width="50%"}
 <p class="jc-point-head">Careful analysis</p>
-Looking only at genes measured well by both methods, using the raw numbers, and checking different counting rules.
+Looking only at genes measured well by both methods, using raw numbers, and checking different counting rules.
 :::
 ::: {.column width="50%"}
 <p class="jc-point-head">An outside check</p>
-Comparing against a different method, or against cell states defined without using either RNA or protein, tests real accuracy — not just whether the two methods agree with each other.
+Comparing against a different method, or against cell states defined without RNA or protein at all.
 :::
 ::::
+
+<p class="jc-highlight">Good controls compare the method to something other than itself.</p>
 
 <p class="jc-source">Proposed checks and sensitivity analyses, not experiments the authors are known to have run.</p>
 
@@ -467,9 +497,7 @@ Source: Proposed checks and sensitivity analyses, not experiments the authors ar
 
 ## Discussion: what does the evidence establish?
 
-<p class="jc-highlight">Same-cell profiling reveals complementary RNA and protein patterns.</p>
-
-Protein's lower measured variability fits with the idea that protein levels are more stable than RNA levels.
+Same-cell profiling reveals complementary RNA and protein patterns, and protein's lower measured variability fits with the idea that it is more stable than RNA.
 
 How much of that difference is real biology, and how much comes from how each method measures and processes its signal?
 

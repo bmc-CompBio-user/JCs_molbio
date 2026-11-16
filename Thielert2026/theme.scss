@@ -4,35 +4,109 @@ $body-color: #152936;
 $presentation-heading-color: #152936;
 $presentation-heading-font-weight: 700;
 $link-color: #177A78;
-$presentation-font-size-root: 28px;
+$presentation-font-size-root: 26px;
+$presentation-line-height: 1.5;
 
 /*-- scss:rules --*/
+
+// ---------------------------------------------------------------------------
+// Style roles used on these slides. Each one has exactly one job, and each
+// job gets exactly one style, used the same way everywhere:
+//
+//   .jc-point-head  quiet structural label above a block of body text
+//                   (e.g. a column heading). Teal, small. Can repeat.
+//   .jc-stat        a measured number / result. Dark, bold, plain. Can repeat.
+//   .jc-frame       a definitional / setup line (not a conclusion). Muted,
+//                   italic. At most once per slide, usually near the top.
+//   .jc-highlight   the single takeaway of the slide: the one sentence a
+//                   viewer should leave with. Teal, bold, set off with
+//                   space and a rule. Exactly one per slide.
+// ---------------------------------------------------------------------------
+
 .reveal h2 {
-  font-size: 1.4em;
+  font-size: 1.3em;
+  margin-bottom: 0.6em;
 }
 
-.jc-highlight {
-  color: #177A78;
-  font-weight: 700;
+.reveal .slides section p {
+  margin: 0.55em 0;
 }
 
-.jc-source {
-  color: #52646C;
-  font-size: 0.5em;
-  margin-top: 0.6em;
+// Give multi-column slides real air between columns, without changing
+// their widths (padding is inside the box, so columns still sum to 100%).
+.reveal .slides section .columns {
+  display: flex;
+  margin: 1.1em 0;
+}
+
+.reveal .slides section .columns .column {
+  box-sizing: border-box;
+  padding: 0 1.4rem;
+}
+
+.reveal .slides section .columns .column:first-child {
+  padding-left: 0;
+}
+
+.reveal .slides section .columns .column:last-child {
+  padding-right: 0;
+}
+
+// Space consecutive column-stacks (two rows of .columns on one slide) apart.
+.reveal .slides section .columns + .columns {
+  margin-top: 1.6em;
 }
 
 .jc-point-head {
+  display: block;
   color: #177A78;
   font-weight: 700;
-  margin-bottom: 0.2em;
+  font-size: 0.78em;
+  letter-spacing: 0.01em;
+  margin: 1.1em 0 0.35em 0;
+}
+
+.jc-point-head:first-child {
+  margin-top: 0;
+}
+
+.jc-stat {
+  display: block;
+  color: #152936;
+  font-weight: 700;
+  margin: 0.4em 0;
+}
+
+.jc-frame {
+  display: block;
+  color: #52646C;
+  font-style: italic;
+  margin: 0.5em 0 1.1em 0;
+}
+
+.jc-highlight {
+  display: block;
+  color: #177A78;
+  font-weight: 700;
+  font-size: 1.05em;
+  margin: 1.4em 0 0.3em 0;
+  padding-top: 0.6em;
+  border-top: 2px solid #dce8e7;
+}
+
+.jc-source {
+  display: block;
+  color: #52646C;
+  font-size: 0.5em;
+  margin-top: 1.5em;
 }
 
 .reveal .slides section img {
   box-shadow: none;
   border: none;
   background: none;
-  max-height: 48vh;
+  max-height: 46vh;
   width: auto;
   max-width: 100%;
+  margin: 0.4em 0;
 }
