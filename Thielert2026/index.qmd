@@ -74,12 +74,13 @@ Source: Gygi et al. Mol Cell Biol (1999). doi:10.1128/MCB.19.3.1720 • Figures 
 ## 2002: reporter experiments separate sources of noise
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="38%"}
 ![](images/elowitz1.png)
-
+:::
+::: {.column width="32%"}
 ![](images/elowitz2.png)
 :::
-::: {.column width="40%"}
+::: {.column width="30%"}
 <p class="jc-point-head">Shared fluctuations</p>
 Cellular conditions affect both reporters.
 
@@ -101,12 +102,13 @@ Source: Elowitz et al. Science (2002). doi:10.1126/science.1070919 • Figures 1
 ## 2006: protein lifetime changes RNA–protein coupling
 
 :::: {.columns}
-::: {.column width="55%"}
+::: {.column width="32%"}
 ![](images/raj7ab.png)
-
+:::
+::: {.column width="28%"}
 ![](images/raj7d.png)
 :::
-::: {.column width="45%"}
+::: {.column width="40%"}
 <p class="jc-point-head">Experiment, left</p>
 Rapidly degraded reporter: stronger coupling.\
 Stable reporter: weaker coupling.
