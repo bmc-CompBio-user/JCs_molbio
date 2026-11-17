@@ -27,30 +27,34 @@ format:
 
 ## Three different RNA–protein correlations
 
+::: {.center-img}
+![](images/scatter_single_plain.png)
+:::
+
 :::: {.columns}
 ::: {.column width="33%"}
 <p class="jc-point-head">Across genes</p>
-One point = one gene\
+One dot = one gene\
 Are abundant RNAs associated with abundant proteins?
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Across cells</p>
-One point = one cell\
+One dot = one cell\
 For a fixed gene, do RNA and protein rise and fall together?
 :::
 ::: {.column width="33%"}
 <p class="jc-point-head">Across conditions</p>
-One point = one condition\
+One dot = one condition\
 Do RNA changes predict protein changes or later responses?
 :::
 ::::
 
 <p class="jc-highlight">Always ask what each point on the plot stands for.</p>
 
-<p class="jc-source">A distinction used throughout this journal club.</p>
+<p class="jc-source">Illustrative scatters, not paper data. A distinction used throughout this journal club.</p>
 
 ::: {.notes}
-Across-gene correlation captures broad abundance rankings. Within-gene across-cell correlation measures cell-to-cell covariation. Across-condition comparisons concern responses. These are different questions, not three measurements of the same thing. High across-gene correlation and weak within-gene correlation can coexist.
+Across-gene correlation captures broad abundance rankings. Within-gene across-cell correlation measures cell-to-cell covariation. Across-condition comparisons concern responses. These are different questions, not three measurements of the same thing. High across-gene correlation and weak within-gene correlation can coexist. The three pictured scatters are simulated, not paper data, chosen only to match the qualitative pattern discussed later: across-gene correlation is moderate, same-gene across-cell correlation is weak and noisy, and across-condition correlation (averaged over many cells per point) looks stronger because per-cell noise has been averaged away.
 
 Source: A distinction used throughout this journal club.
 :::
@@ -170,13 +174,15 @@ Source: Taniguchi et al. Science (2010). doi:10.1126/science.1188308 • Figure 
 ## 2011–2014: the same kind of data, two different conclusions
 
 :::: {.columns}
-::: {.column width="50%"}
-<p class="jc-point-head">2011: a first global estimate</p>
-Combining protein amounts with how fast RNA and protein are made and broken down gave an early picture of how much RNA drives protein levels.
+::: {.column width="42%"}
+![](images/variance_explained_bar.png)
 :::
-::: {.column width="50%"}
+::: {.column width="58%"}
+<p class="jc-point-head">2011: a first global estimate</p>
+Combining protein amounts with how fast RNA and protein are made and broken down, this analysis attributed about 56% of the between-gene differences in protein levels to differences in RNA.
+
 <p class="jc-point-head">2013–2014: the numbers move</p>
-A correction, plus a new analysis using more carefully measured proteins, pushed the estimated role of RNA upward.
+A correction, plus a new analysis using more carefully measured proteins, pushed that estimate up to about 81%.
 :::
 ::::
 

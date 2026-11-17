@@ -110,3 +110,12 @@ $presentation-line-height: 1.5;
   max-width: 100%;
   margin: 0.4em 0;
 }
+
+.center-img {
+  display: block;
+  text-align: center;
+}
+
+.center-img img {
+  max-height: 34vh;
+}
